@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e74f51;
+  font-family: "Courier New", Courier, monospace;
+}
+.crud-app {
+  width: 600px;
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+}
+.crud-title {
+  padding: 10px;
+  margin: 0 0 15px;
+  background-color: #e74f51;
+  border-radius: 6px;
+  font-size: 18px;
+  color: white;
+}
+form {
+  display: flex;
+}
+form input {
+  padding: 8px;
+  border: none;
+}
+form input[type="text"] {
+  flex: 1;
+  background-color: #eee;
+}
+form input[type="submit"] {
+  flex-basis: 120px;
+  background-color: #58cb68;
+  color: white;
+  cursor: pointer;
+}
+form input:focus {
+  outline: none;
+}
+.courses {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.course {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.course.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.course.edited {
+  display: block;
+}
+.course-title {
+  flex: 1;
+  font-weight: 600;
+  color: #333;
+}
+.course button {
+  flex-basis: 120px;
+  padding: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.course button.edit-btn {
+  background-color: #767576;
+}
+.course button.delete-btn {
+  background-color: #e74f51;
+}
+.courses .msg {
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
